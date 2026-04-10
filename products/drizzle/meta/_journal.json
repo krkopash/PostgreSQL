@@ -22,6 +22,27 @@
       "when": 1775715688449,
       "tag": "0002_flippant_speed",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1775802881074,
+      "tag": "0003_cloudy_killer_shrike",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1775803786705,
+      "tag": "0004_cooing_human_fly",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1775816126431,
+      "tag": "0005_low_caretaker",
+      "breakpoints": true
     }
   ]
 }

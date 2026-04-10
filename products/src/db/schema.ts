@@ -16,8 +16,9 @@ export const profiles = pgTable("profiles", {
 export const products = pgTable("products", {
   id: serial("id").primaryKey(),
   name: text("name"),
-  price: integer("price"),
+  price: integer("price").notNull(),
   description: text("description"),
+  stock: integer("stock").notNull().default(0),
 });
 
 export const categories = pgTable("categories", {
@@ -45,7 +46,7 @@ export const orderItems = pgTable("order_items", {
   id: serial("id").primaryKey(),
   orderId: integer("order_id").notNull().references(() => orders.id),
   productId: integer("product_id").notNull().references(() => products.id),
-  quantity: integer("quantity"),
+  quantity: integer("quantity").notNull()
 });
 
 
@@ -59,5 +60,5 @@ export const cartItems = pgTable("cart_items", {
   id: serial("id").primaryKey(),
   cartId: integer("cart_id").notNull().references(() => carts.id),
   productId: integer("product_id").notNull().references(() => products.id),
-  quantity: integer("quantity"),
+  quantity: integer("quantity").notNull(),
 });

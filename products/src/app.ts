@@ -18,18 +18,8 @@ import categoryRoutes from "./routes/category"
 app.use("/cat", categoryRoutes);
 app.use("/cart", cartRoutes);
 
+import orderRoute from './routes/order';;
+app.use("/orders", orderRoute);
+
 export default app;
 
-
-/*
-POST /cart/add
-{
-  "userId": 1,
-  "productId": 2,
-  "quantity": 1
-}
-  GET /cart/1
-  DELETE /cart/remove/1
-  DELETE /cart/clear/1
-  
-*/
