@@ -2,7 +2,7 @@ import { Router } from "express";
 import { db } from "../db";
 import { products, productCategories, categories } from "../db/schema";
 import { eq, inArray } from "drizzle-orm";
-import { and,or,like } from "drizzle-orm";
+
 
 const router = Router();
 
