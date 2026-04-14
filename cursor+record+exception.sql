@@ -15,7 +15,7 @@ raise notice 'name: %, age: %',
 user_rec.name, user_rec.age;
 end loop;
 end $$;
-
+select * from users;
 ----handle null values
 do $$
 declare user_rec record;
